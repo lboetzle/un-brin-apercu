@@ -17,10 +17,10 @@ img{display:block;max-width:100%}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:.82em 1.7em;border-radius:50px;font-size:.9rem;font-weight:500;line-height:1.1;white-space:nowrap;text-align:center;transition:.25s;cursor:pointer;border:1.5px solid transparent}
 .btn-primary{background:var(--green);color:#fff}.btn-primary:hover{background:var(--green-d);transform:translateY(-2px)}
 .btn-line{background:transparent;color:var(--green);border-color:var(--green)}.btn-line:hover{background:var(--green);color:#fff}
-.hero{display:grid;grid-template-columns:1.05fr .95fr;grid-template-areas:'txt img' 'cta img';column-gap:50px;row-gap:28px;align-content:center;padding:70px 28px 78px}
-.hero-txt{grid-area:txt}
-.hero-cta{grid-area:cta;display:flex;gap:14px;flex-wrap:wrap}
-.hero-img{grid-area:img;align-self:center;border-radius:24px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding:70px 28px 78px}
+.pagehead .hero p{margin-left:0;margin-right:0}
+.hero-cta{display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-top:28px}
+.hero-img{border-radius:24px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5}
 .hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
 header{position:sticky;top:0;z-index:50;background:rgba(245,241,230,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;flex-wrap:nowrap;height:80px;gap:26px}
@@ -101,7 +101,7 @@ footer h4{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:v
 footer a{display:block;font-size:.87rem;padding:4px 0;color:rgba(245,241,230,.66)}footer a:hover{color:#fff}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:.78rem;text-align:center}
 .ribbon{background:var(--gold);color:#3a2e0e;text-align:center;font-size:.76rem;letter-spacing:.05em;padding:7px;font-weight:500}
-@media(max-width:920px){.burger{display:flex}.nav{gap:12px}.menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--cream);border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:6px 22px 18px;max-height:calc(100vh - 80px);overflow-y:auto}header.open .menu{display:flex}.menu>li>a{width:100%;font-size:.95rem;padding:14px 0;border-bottom:1px solid var(--line);border-top:none}.menu>li>a.active{border-bottom-color:var(--line);color:var(--green)}.caret{display:none}.dropdown{position:static;transform:none;opacity:1;visibility:visible;background:transparent;box-shadow:none;min-width:0;padding:4px 0 10px 16px}.menu>li:hover .dropdown{transform:none}.dropdown a{padding:9px 0;font-size:.88rem;border-bottom:none}.nav .btn-primary{padding:.62em 1.1em;font-size:.78rem;box-shadow:none}.grid3,.grid2,.about-split,.contactbox{grid-template-columns:1fr}.hero{grid-template-columns:1fr;grid-template-areas:'txt' 'img' 'cta';gap:30px;padding:46px 22px 54px}.hero-img{aspect-ratio:4/5;width:100%;max-width:400px;margin:0 auto}.hero-cta{justify-content:center}.foot{grid-template-columns:1fr 1fr;gap:26px}.quote-grid{columns:1}.about-split img{position:static}section{padding:46px 0}.cta{padding:36px 22px}}
+@media(max-width:920px){.burger{display:flex}.nav{gap:12px}.menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--cream);border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:6px 22px 18px;max-height:calc(100vh - 80px);overflow-y:auto}header.open .menu{display:flex}.menu>li>a{width:100%;font-size:.95rem;padding:14px 0;border-bottom:1px solid var(--line);border-top:none}.menu>li>a.active{border-bottom-color:var(--line);color:var(--green)}.caret{display:none}.dropdown{position:static;transform:none;opacity:1;visibility:visible;background:transparent;box-shadow:none;min-width:0;padding:4px 0 10px 16px}.menu>li:hover .dropdown{transform:none}.dropdown a{padding:9px 0;font-size:.88rem;border-bottom:none}.nav .btn-primary{padding:.62em 1.1em;font-size:.78rem;box-shadow:none}.grid3,.grid2,.about-split,.contactbox{grid-template-columns:1fr}.hero{grid-template-columns:1fr;gap:30px;padding:46px 22px 54px}.hero-left{display:contents}.hero-txt{order:1}.hero-img{order:2}.hero-cta{order:3}.hero-img{aspect-ratio:4/5;width:100%;max-width:400px;margin:0 auto}.hero-cta{justify-content:center;margin-top:0}.foot{grid-template-columns:1fr 1fr;gap:26px}.quote-grid{columns:1}.about-split img{position:static}section{padding:46px 0}.cta{padding:36px 22px}}
 @media(max-width:560px){.nav .btn-primary{display:none}.logo img{height:40px}.foot{grid-template-columns:1fr;gap:22px}}
 </style></head><body>
 <div class="ribbon">✦ Aperçu de concept — contenu et photos d'Un Brin d'Ayurvéda ✦</div>
@@ -121,14 +121,16 @@ footer a{display:block;font-size:.87rem;padding:4px 0;color:rgba(245,241,230,.66
 
 <section class="pagehead" style="text-align:left;padding:0">
  <div class="wrap hero">
-  <div class="hero-txt">
+  <div class="hero-left">
+   <div class="hero-txt">
    <span class="eyebrow">Nelling · Moselle</span>
    <h1 style="font-size:clamp(2.7rem,5vw,4rem);margin:18px 0 8px">Harmoniser le <em style="font-style:italic;color:var(--green)">corps, l'esprit</em> et l'énergie</h1>
    <div class="serif" style="font-style:italic;font-size:clamp(1.1rem,3.4vw,1.35rem);color:var(--sage);margin-bottom:20px">«&nbsp;Accompagnements complets vers soi m'aime&nbsp;»</div>
    <p style="font-size:1.08rem;color:var(--soft);max-width:440px;margin-bottom:0">L'Ayurvéda, le yoga et les massages au service de votre équilibre et de votre sérénité — une approche holistique, douce et adaptée à chacun.</p>
+   </div>
+   <div class="hero-cta"><a class="btn btn-primary" href="contact.html">Demander un rendez-vous</a><a class="btn btn-line" href="ayurveda.html">Découvrir l'Ayurvéda</a></div>
   </div>
   <div class="hero-img"><img src="assets/monia.jpg" alt="Monia Di Cintio"></div>
-  <div class="hero-cta"><a class="btn btn-primary" href="contact.html">Demander un rendez-vous</a><a class="btn btn-line" href="ayurveda.html">Découvrir l'Ayurvéda</a></div>
  </div>
 </section>
 <div class="disclaimer">L'Ayurvéda est une approche holistique de Mieux-être. Elle ne constitue ni un diagnostic ni un traitement médical et s'inscrit en complément de la médecine allopathique.</div>
