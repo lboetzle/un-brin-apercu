@@ -14,22 +14,26 @@ a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
 .eyebrow{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--sage);font-weight:600}
-.btn{display:inline-flex;align-items:center;gap:.5em;padding:.82em 1.7em;border-radius:50px;font-size:.9rem;font-weight:500;transition:.25s;cursor:pointer;border:1.5px solid transparent}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:.82em 1.7em;border-radius:50px;font-size:.9rem;font-weight:500;line-height:1.1;white-space:nowrap;text-align:center;transition:.25s;cursor:pointer;border:1.5px solid transparent}
 .btn-primary{background:var(--green);color:#fff}.btn-primary:hover{background:var(--green-d);transform:translateY(-2px)}
 .btn-line{background:transparent;color:var(--green);border-color:var(--green)}.btn-line:hover{background:var(--green);color:#fff}
 header{position:sticky;top:0;z-index:50;background:rgba(245,241,230,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:80px;gap:18px}
+.nav{display:flex;align-items:center;justify-content:space-between;flex-wrap:nowrap;height:80px;gap:26px}
 .logo img{height:50px}
-.menu{display:flex;gap:24px;list-style:none}
+.menu{display:flex;align-items:center;flex-wrap:nowrap;gap:26px;list-style:none}
 .menu>li{position:relative}
-.menu>li>a{font-size:.84rem;font-weight:500;letter-spacing:.02em;padding:8px 0;display:inline-flex;align-items:center;gap:5px;color:var(--ink)}
+.menu>li>a{font-size:.85rem;font-weight:500;letter-spacing:.02em;white-space:nowrap;padding:9px 0;display:inline-flex;align-items:center;gap:6px;color:var(--ink);border-bottom:2px solid transparent}
 .menu>li>a:hover{color:var(--green)}
-.menu>li>a.active{color:var(--green);border-bottom:2px solid var(--green)}
+.menu>li>a.active{color:var(--green);border-bottom-color:var(--green)}
 .caret{width:7px;height:7px;border-right:1.5px solid var(--sage);border-bottom:1.5px solid var(--sage);transform:rotate(45deg);margin-top:-3px}
 .dropdown{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(10px);background:#fff;border-radius:14px;box-shadow:var(--shadow);padding:10px;min-width:240px;opacity:0;visibility:hidden;transition:.2s}
 .menu>li:hover .dropdown{opacity:1;visibility:visible;transform:translateX(-50%) translateY(5px)}
 .dropdown a{display:block;padding:9px 14px;border-radius:9px;font-size:.85rem;color:var(--soft)}
 .dropdown a:hover{background:var(--mint-s);color:var(--ink)}
+.nav .btn-primary{padding:.72em 1.55em;font-size:.85rem;letter-spacing:.01em;box-shadow:0 4px 14px rgba(45,90,61,.18)}
+.nav .btn-primary:hover{box-shadow:0 7px 20px rgba(45,90,61,.26)}
+@media(max-width:1240px){.nav{gap:18px}.menu{gap:17px}.menu>li>a{font-size:.79rem}.nav .btn-primary{padding:.66em 1.2em;font-size:.8rem}.logo img{height:44px}}
+@media(max-width:1040px){.menu{gap:13px}.menu>li>a{font-size:.75rem}.wrap{padding:0 20px}}
 .burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px}
 .burger span{width:24px;height:2px;background:var(--green);border-radius:2px}
 .pagehead{background:linear-gradient(150deg,var(--mint-s),var(--cream) 70%);padding:54px 0 46px;text-align:center}
@@ -92,20 +96,20 @@ footer h4{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:v
 footer a{display:block;font-size:.87rem;padding:4px 0;color:rgba(245,241,230,.66)}footer a:hover{color:#fff}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:.78rem;text-align:center}
 .ribbon{background:var(--gold);color:#3a2e0e;text-align:center;font-size:.76rem;letter-spacing:.05em;padding:7px;font-weight:500}
-@media(max-width:920px){.menu,.nav .btn{display:none}.burger{display:flex}.grid3,.grid2,.about-split,.contactbox{grid-template-columns:1fr}.quote-grid{columns:1}.about-split img{position:static}section{padding:46px 0}.cta{padding:36px 22px}}
+@media(max-width:920px){.burger{display:flex}.nav{gap:12px}.menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--cream);border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:6px 22px 18px;max-height:calc(100vh - 80px);overflow-y:auto}header.open .menu{display:flex}.menu>li>a{width:100%;font-size:.95rem;padding:14px 0;border-bottom:1px solid var(--line);border-top:none}.menu>li>a.active{border-bottom-color:var(--line);color:var(--green)}.caret{display:none}.dropdown{position:static;transform:none;opacity:1;visibility:visible;background:transparent;box-shadow:none;min-width:0;padding:4px 0 10px 16px}.menu>li:hover .dropdown{transform:none}.dropdown a{padding:9px 0;font-size:.88rem;border-bottom:none}.nav .btn-primary{padding:.62em 1.1em;font-size:.78rem;box-shadow:none}.grid3,.grid2,.about-split,.contactbox{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr;gap:26px}.quote-grid{columns:1}.about-split img{position:static}section{padding:46px 0}.cta{padding:36px 22px}}
+@media(max-width:560px){.nav .btn-primary{display:none}.logo img{height:40px}.foot{grid-template-columns:1fr;gap:22px}}
 </style></head><body>
 <div class="ribbon">✦ Aperçu de concept — contenu et photos d'Un Brin d'Ayurvéda ✦</div>
 <header><div class="wrap nav">
 <a class="logo" href="index.html"><img src="assets/logo.png" alt="Un Brin d'Ayurvéda"></a>
 <nav><ul class="menu"><li><a href="index.html">Accueil</a></li>
 <li><a href="ayurveda.html">L'Ayurvéda</a></li>
-<li><a href="#">Accompagnements & soins <i class="caret"></i></a><div class="dropdown"><a href="accompagnements.html">Consultations & bilans</a><a href="massages.html">Massages & soins</a><a href="cures.html">Retour à soi — cure à la journée</a><a href="corpus.html">Accompagnement Corpus</a></div></li>
+<li><a href="#">Accompagnements <i class="caret"></i></a><div class="dropdown"><a href="accompagnements.html">Consultations & bilans</a><a href="massages.html">Massages & soins</a><a href="cures.html">Retour à soi — cure à la journée</a><a href="corpus.html">Accompagnement Corpus</a></div></li>
 <li><a href="yoga.html">Yoga <i class="caret"></i></a><div class="dropdown"><a href="yoga.html">Yoga adultes</a><a href="yoga-enfants.html">Yoga enfants & ados</a></div></li>
-<li><a href="#">Formations & ateliers <i class="caret"></i></a><div class="dropdown"><a href="transmissions.html">Les 3 M & transmissions</a><a href="evenements.html">Ateliers cuisine & événements</a></div></li>
+<li><a href="#">Formations <i class="caret"></i></a><div class="dropdown"><a href="transmissions.html">Les 3 M & transmissions</a><a href="evenements.html">Ateliers cuisine & événements</a></div></li>
 <li><a href="boutique.html">Boutique</a></li>
 <li><a href="a-propos.html">À propos</a></li>
-<li><a href="blog.html">Blog</a></li>
-<li><a href="contact.html">Contact</a></li></ul></nav>
+<li><a href="blog.html">Blog</a></li></ul></nav>
 <a class="btn btn-primary" href="contact.html">Prendre contact</a>
 <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
 </div></header>
@@ -137,4 +141,5 @@ footer a{display:block;font-size:.87rem;padding:4px 0;color:rgba(245,241,230,.66
 </div>
 <div class="foot-bottom">© 2026 Un Brin d'Ayurvéda — Monia Di Cintio · Mentions légales · Confidentialité</div>
 </div></footer>
+<script>(function(){var h=document.querySelector('header'),b=document.querySelector('.burger');if(b&&h){b.addEventListener('click',function(){h.classList.toggle('open')});h.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){h.classList.remove('open')})});}})();</script>
 </body></html>
