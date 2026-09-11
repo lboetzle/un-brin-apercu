@@ -1,5 +1,4 @@
-<!DOCTYPE html><html lang="fr"><head>
-<meta name="robots" content="noindex, nofollow"><meta charset="UTF-8">
+<!DOCTYPE html><html lang="fr"><head><meta name="robots" content="noindex, nofollow"><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Agni, le feu digestif en Ayurveda | Blog Un Brin d&#x27;Ayurvéda</title><meta name="description" content="Article publié le 01/03/2024 En Ayurveda, le terme « Agni » désigne le feu digestif, qui représente notre pouvoir métabolique, c&#x27;est-à-dire notre…">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,7 +100,47 @@ footer h4{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:v
 footer a{display:block;font-size:.87rem;padding:4px 0;color:rgba(245,241,230,.66)}footer a:hover{color:#fff}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:.78rem;text-align:center}
 .ribbon{background:var(--gold);color:#3a2e0e;text-align:center;font-size:.76rem;letter-spacing:.05em;padding:7px;font-weight:500}
-@media(max-width:920px){.burger{display:flex}.nav{gap:12px}.menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--cream);border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:6px 22px 18px;max-height:calc(100vh - 80px);overflow-y:auto}header.open .menu{display:flex}.menu>li>a{width:100%;font-size:.95rem;padding:14px 0;border-bottom:1px solid var(--line);border-top:none}.menu>li>a.active{border-bottom-color:var(--line);color:var(--green)}.caret{display:none}.dropdown{position:static;transform:none;opacity:1;visibility:visible;background:transparent;box-shadow:none;min-width:0;padding:4px 0 10px 16px}.menu>li:hover .dropdown{transform:none}.dropdown a{padding:9px 0;font-size:.88rem;border-bottom:none}.nav .btn-primary{padding:.62em 1.1em;font-size:.78rem;box-shadow:none}.grid3,.grid2,.about-split,.contactbox{grid-template-columns:1fr}.hero{grid-template-columns:1fr;gap:30px;padding:46px 22px 54px}.hero-left{display:contents}.hero-txt{order:1}.hero-img{order:2}.hero-cta{order:3}.hero-img{aspect-ratio:4/5;width:100%;max-width:400px;margin:0 auto}.hero-cta{justify-content:center;margin-top:0}.foot{grid-template-columns:1fr 1fr;gap:26px}.quote-grid{columns:1}.about-split img{position:static}section{padding:46px 0}.cta{padding:36px 22px}}
+
+/* --- 5 elements & doshas (page Ayurveda) --- */
+.elem-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:14px;margin:22px 0 6px}
+.elem{background:#fff;border-radius:14px;padding:18px 16px;box-shadow:var(--shadow)}
+.elem b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--green-d);margin-bottom:5px}
+.elem span{font-size:.83rem;color:var(--soft);line-height:1.55;display:block}
+.dosha-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:24px}
+.dosha{background:#fff;border-radius:18px;padding:26px;box-shadow:var(--shadow);border-top:4px solid var(--green)}
+.dosha h3{font-size:1.9rem;color:var(--green-d);margin:0}
+.dosha .compo{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);font-weight:600;margin:2px 0 12px}
+.dosha p{font-size:.9rem;color:var(--soft);margin-bottom:8px}
+.dosha dl{font-size:.86rem;margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.dosha dt{font-weight:600;color:var(--green-d);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;margin-top:11px}
+.dosha dd{color:var(--soft);line-height:1.6}
+/* --- prochaines dates --- */
+.dates{list-style:none;margin:18px 0 0}
+.dates li{display:grid;grid-template-columns:94px 1fr auto;gap:18px;align-items:center;background:#fff;border-radius:14px;padding:15px 22px;margin-bottom:12px;box-shadow:var(--shadow)}
+.dates .d{font-family:'Cormorant Garamond',serif;color:var(--green);line-height:1.12;text-align:center}
+.dates .d b{display:block;font-size:1.95rem}
+.dates .d span{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sage)}
+.dates h4{font-family:'Inter';font-weight:600;font-size:1rem;color:var(--green-d);margin-bottom:2px}
+.dates .meta{font-size:.83rem;color:var(--soft)}
+.dates .k{display:inline-block;font-size:.66rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:var(--mint);color:var(--green-d);padding:3px 12px;border-radius:50px;white-space:nowrap}
+.nodate{background:var(--mint-s);border-radius:16px;padding:28px 30px;text-align:center}
+.nodate p{color:var(--soft);font-size:.95rem;max-width:520px;margin:0 auto 18px}
+/* --- videos --- */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:22px}
+.vcard{background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column;cursor:pointer;border:none;padding:0;text-align:left;font:inherit;width:100%}
+.vcard:hover{transform:translateY(-5px)}
+.vthumb{position:relative;aspect-ratio:16/9;background:var(--mint-s);overflow:hidden}
+.vthumb img{width:100%;height:100%;object-fit:cover;display:block}
+.vthumb iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vplay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.vplay span{width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,.92);box-shadow:0 4px 16px rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;transition:.2s}
+.vcard:hover .vplay span{background:var(--green);transform:scale(1.08)}
+.vplay i{width:0;height:0;border-left:15px solid var(--green);border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px;transition:.2s}
+.vcard:hover .vplay i{border-left-color:#fff}
+.vbody{padding:15px 19px 19px}
+.vbody .k{font-size:.67rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:6px}
+.vbody h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.12rem;color:var(--green-d);line-height:1.26}
+@media(max-width:920px){.burger{display:flex}.nav{gap:12px}.menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--cream);border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:6px 22px 18px;max-height:calc(100vh - 80px);overflow-y:auto}header.open .menu{display:flex}.menu>li>a{width:100%;font-size:.95rem;padding:14px 0;border-bottom:1px solid var(--line);border-top:none}.menu>li>a.active{border-bottom-color:var(--line);color:var(--green)}.caret{display:none}.dropdown{position:static;transform:none;opacity:1;visibility:visible;background:transparent;box-shadow:none;min-width:0;padding:4px 0 10px 16px}.menu>li:hover .dropdown{transform:none}.dropdown a{padding:9px 0;font-size:.88rem;border-bottom:none}.nav .btn-primary{padding:.62em 1.1em;font-size:.78rem;box-shadow:none}.grid3,.grid2,.about-split,.contactbox{grid-template-columns:1fr}.hero{grid-template-columns:1fr;gap:30px;padding:46px 22px 54px}.hero-left{display:contents}.hero-txt{order:1}.hero-img{order:2}.hero-cta{order:3}.hero-img{aspect-ratio:4/5;width:100%;max-width:400px;margin:0 auto}.hero-cta{justify-content:center;margin-top:0}.foot{grid-template-columns:1fr 1fr;gap:26px}.quote-grid{columns:1}.about-split img{position:static}section{padding:46px 0}.cta{padding:36px 22px}.elem-grid{grid-template-columns:repeat(2,1fr)}.dosha-grid{grid-template-columns:1fr}.dates li{grid-template-columns:1fr;gap:9px;text-align:left}.dates .d{text-align:left}.dates .d b{display:inline;font-size:1.5rem}.dates .d span{display:inline;margin-left:8px}}
 @media(max-width:560px){.nav .btn-primary{display:none}.logo img{height:40px}.foot{grid-template-columns:1fr;gap:22px}}
 
 .article-wrap{max-width:760px;margin:0 auto;padding:40px 28px 10px}
@@ -156,10 +195,11 @@ html{scroll-behavior:smooth}
 <li><a href="../ayurveda.html">L'Ayurvéda</a></li>
 <li><a href="#">Accompagnements <i class="caret"></i></a><div class="dropdown"><a href="../accompagnements.html">Consultations & bilans</a><a href="../massages.html">Massages & soins</a><a href="../cures.html">Retour à soi — cure à la journée</a><a href="../corpus.html">Accompagnement Corpus</a></div></li>
 <li><a href="../yoga.html">Yoga <i class="caret"></i></a><div class="dropdown"><a href="../yoga.html">Yoga adultes</a><a href="../yoga-enfants.html">Yoga enfants & ados</a></div></li>
-<li><a href="#">Formations <i class="caret"></i></a><div class="dropdown"><a href="../transmissions.html">Les 3 M & transmissions</a><a href="../evenements.html">Ateliers cuisine & événements</a></div></li>
+<li><a href="../transmissions.html">Transmissions</a></li>
+<li><a href="../evenements.html">Évènements <i class="caret"></i></a><div class="dropdown"><a href="../evenements.html#createliers">Créa-ateliers cuisine</a><a href="../evenements.html#trois-m">Les 3 M — Moudras, Méditation, Mantras</a><a href="../cures.html">Retraites & cures</a><a href="../evenements.html#partenariats">Partenariats</a></div></li>
 <li><a href="../boutique.html">Boutique</a></li>
-<li><a href="../a-propos.html">À propos</a></li>
-<li><a href="../blog.html" class="active">Blog</a></li></ul></nav>
+<li><a href="../blog.html" class="active">Blog</a></li>
+<li><a href="../a-propos.html">À propos</a></li></ul></nav>
 <a class="btn btn-primary" href="../contact.html">Prendre contact</a>
 <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
 </div></header>
@@ -187,8 +227,8 @@ html{scroll-behavior:smooth}
 <div class="foot">
 <div><img src="../assets/logo.png" alt="Un Brin d'Ayurvéda"><div class="slo">«&nbsp;Accompagnements complets vers soi m'aime&nbsp;»</div></div>
 <div><h4>Prestations</h4><a href="../massages.html">Massages & soins</a><a href="../yoga.html">Yoga</a><a href="../accompagnements.html">Consultations & Ateliers</a><a href="../corpus.html">Accompagnement Corpus</a></div>
-<div><h4>Découvrir</h4><a href="../a-propos.html">À propos</a><a href="../transmissions.html">Formations</a><a href="../boutique.html">Boutique</a><a href="../temoignages.html">Témoignages</a><a href="../blog.html">Blog</a></div>
-<div><h4>Contact</h4><a href="tel:0630203034">06 30 20 30 34</a><a href="mailto:contact@un-brin-dayurveda.fr">contact@un-brin-dayurveda.fr</a></div>
+<div><h4>Découvrir</h4><a href="../a-propos.html">À propos</a><a href="../transmissions.html">Transmissions</a><a href="../evenements.html">Évènements</a><a href="../boutique.html">Boutique</a><a href="../temoignages.html">Témoignages</a><a href="../blog.html">Blog</a></div>
+<div><h4>Contact</h4><a href="tel:0630203034">06 34 20 30 34</a><a href="mailto:contact@un-brin-dayurveda.fr">contact@un-brin-dayurveda.fr</a></div>
 </div>
 <div class="foot-bottom">© 2026 Un Brin d'Ayurvéda — Monia Di Cintio · Mentions légales · Confidentialité</div>
 </div></footer><script>(function(){var h=document.querySelector('header'),b=document.querySelector('.burger');if(b&&h){b.addEventListener('click',function(){h.classList.toggle('open')});h.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){h.classList.remove('open')})});}})();</script></body></html>

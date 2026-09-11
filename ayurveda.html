@@ -1,7 +1,6 @@
-<!DOCTYPE html><html lang="fr"><head>
-<meta name="robots" content="noindex, nofollow"><meta charset="UTF-8">
+<!DOCTYPE html><html lang="fr"><head><meta name="robots" content="noindex, nofollow"><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>L'Ayurvéda — Une approche holistique du mieux-être | Un Brin d'Ayurvéda</title><meta name="description" content="Découvrez l'Ayurvéda avec Monia Di Cintio : nutrition, massages et yoga, une science millénaire pour harmoniser corps, esprit et énergie.">
+<title>C'est quoi l'Ayurvéda ? Les Doshas, les 5 éléments, Prakriti & Vikruti | Un Brin d'Ayurvéda</title><meta name="description" content="C'est quoi l'Ayurvéda ? Les 5 éléments, les 3 Doshas (Vata, Pitta, Kapha), leur siège dans le corps et la différence entre Prakriti (la constitution) et Vikruti (la condition). Par Monia Di Cintio, Nelling.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -101,7 +100,47 @@ footer h4{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:v
 footer a{display:block;font-size:.87rem;padding:4px 0;color:rgba(245,241,230,.66)}footer a:hover{color:#fff}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:.78rem;text-align:center}
 .ribbon{background:var(--gold);color:#3a2e0e;text-align:center;font-size:.76rem;letter-spacing:.05em;padding:7px;font-weight:500}
-@media(max-width:920px){.burger{display:flex}.nav{gap:12px}.menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--cream);border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:6px 22px 18px;max-height:calc(100vh - 80px);overflow-y:auto}header.open .menu{display:flex}.menu>li>a{width:100%;font-size:.95rem;padding:14px 0;border-bottom:1px solid var(--line);border-top:none}.menu>li>a.active{border-bottom-color:var(--line);color:var(--green)}.caret{display:none}.dropdown{position:static;transform:none;opacity:1;visibility:visible;background:transparent;box-shadow:none;min-width:0;padding:4px 0 10px 16px}.menu>li:hover .dropdown{transform:none}.dropdown a{padding:9px 0;font-size:.88rem;border-bottom:none}.nav .btn-primary{padding:.62em 1.1em;font-size:.78rem;box-shadow:none}.grid3,.grid2,.about-split,.contactbox{grid-template-columns:1fr}.hero{grid-template-columns:1fr;gap:30px;padding:46px 22px 54px}.hero-left{display:contents}.hero-txt{order:1}.hero-img{order:2}.hero-cta{order:3}.hero-img{aspect-ratio:4/5;width:100%;max-width:400px;margin:0 auto}.hero-cta{justify-content:center;margin-top:0}.foot{grid-template-columns:1fr 1fr;gap:26px}.quote-grid{columns:1}.about-split img{position:static}section{padding:46px 0}.cta{padding:36px 22px}}
+
+/* --- 5 elements & doshas (page Ayurveda) --- */
+.elem-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:14px;margin:22px 0 6px}
+.elem{background:#fff;border-radius:14px;padding:18px 16px;box-shadow:var(--shadow)}
+.elem b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--green-d);margin-bottom:5px}
+.elem span{font-size:.83rem;color:var(--soft);line-height:1.55;display:block}
+.dosha-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:24px}
+.dosha{background:#fff;border-radius:18px;padding:26px;box-shadow:var(--shadow);border-top:4px solid var(--green)}
+.dosha h3{font-size:1.9rem;color:var(--green-d);margin:0}
+.dosha .compo{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);font-weight:600;margin:2px 0 12px}
+.dosha p{font-size:.9rem;color:var(--soft);margin-bottom:8px}
+.dosha dl{font-size:.86rem;margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.dosha dt{font-weight:600;color:var(--green-d);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;margin-top:11px}
+.dosha dd{color:var(--soft);line-height:1.6}
+/* --- prochaines dates --- */
+.dates{list-style:none;margin:18px 0 0}
+.dates li{display:grid;grid-template-columns:94px 1fr auto;gap:18px;align-items:center;background:#fff;border-radius:14px;padding:15px 22px;margin-bottom:12px;box-shadow:var(--shadow)}
+.dates .d{font-family:'Cormorant Garamond',serif;color:var(--green);line-height:1.12;text-align:center}
+.dates .d b{display:block;font-size:1.95rem}
+.dates .d span{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sage)}
+.dates h4{font-family:'Inter';font-weight:600;font-size:1rem;color:var(--green-d);margin-bottom:2px}
+.dates .meta{font-size:.83rem;color:var(--soft)}
+.dates .k{display:inline-block;font-size:.66rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:var(--mint);color:var(--green-d);padding:3px 12px;border-radius:50px;white-space:nowrap}
+.nodate{background:var(--mint-s);border-radius:16px;padding:28px 30px;text-align:center}
+.nodate p{color:var(--soft);font-size:.95rem;max-width:520px;margin:0 auto 18px}
+/* --- videos --- */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:22px}
+.vcard{background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column;cursor:pointer;border:none;padding:0;text-align:left;font:inherit;width:100%}
+.vcard:hover{transform:translateY(-5px)}
+.vthumb{position:relative;aspect-ratio:16/9;background:var(--mint-s);overflow:hidden}
+.vthumb img{width:100%;height:100%;object-fit:cover;display:block}
+.vthumb iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vplay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.vplay span{width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,.92);box-shadow:0 4px 16px rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;transition:.2s}
+.vcard:hover .vplay span{background:var(--green);transform:scale(1.08)}
+.vplay i{width:0;height:0;border-left:15px solid var(--green);border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px;transition:.2s}
+.vcard:hover .vplay i{border-left-color:#fff}
+.vbody{padding:15px 19px 19px}
+.vbody .k{font-size:.67rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:6px}
+.vbody h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.12rem;color:var(--green-d);line-height:1.26}
+@media(max-width:920px){.burger{display:flex}.nav{gap:12px}.menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--cream);border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:6px 22px 18px;max-height:calc(100vh - 80px);overflow-y:auto}header.open .menu{display:flex}.menu>li>a{width:100%;font-size:.95rem;padding:14px 0;border-bottom:1px solid var(--line);border-top:none}.menu>li>a.active{border-bottom-color:var(--line);color:var(--green)}.caret{display:none}.dropdown{position:static;transform:none;opacity:1;visibility:visible;background:transparent;box-shadow:none;min-width:0;padding:4px 0 10px 16px}.menu>li:hover .dropdown{transform:none}.dropdown a{padding:9px 0;font-size:.88rem;border-bottom:none}.nav .btn-primary{padding:.62em 1.1em;font-size:.78rem;box-shadow:none}.grid3,.grid2,.about-split,.contactbox{grid-template-columns:1fr}.hero{grid-template-columns:1fr;gap:30px;padding:46px 22px 54px}.hero-left{display:contents}.hero-txt{order:1}.hero-img{order:2}.hero-cta{order:3}.hero-img{aspect-ratio:4/5;width:100%;max-width:400px;margin:0 auto}.hero-cta{justify-content:center;margin-top:0}.foot{grid-template-columns:1fr 1fr;gap:26px}.quote-grid{columns:1}.about-split img{position:static}section{padding:46px 0}.cta{padding:36px 22px}.elem-grid{grid-template-columns:repeat(2,1fr)}.dosha-grid{grid-template-columns:1fr}.dates li{grid-template-columns:1fr;gap:9px;text-align:left}.dates .d{text-align:left}.dates .d b{display:inline;font-size:1.5rem}.dates .d span{display:inline;margin-left:8px}}
 @media(max-width:560px){.nav .btn-primary{display:none}.logo img{height:40px}.foot{grid-template-columns:1fr;gap:22px}}
 </style></head><body>
 <div class="ribbon">✦ Aperçu de concept — contenu et photos d'Un Brin d'Ayurvéda ✦</div>
@@ -111,17 +150,72 @@ footer a{display:block;font-size:.87rem;padding:4px 0;color:rgba(245,241,230,.66
 <li><a href="ayurveda.html" class="active">L'Ayurvéda</a></li>
 <li><a href="#">Accompagnements <i class="caret"></i></a><div class="dropdown"><a href="accompagnements.html">Consultations & bilans</a><a href="massages.html">Massages & soins</a><a href="cures.html">Retour à soi — cure à la journée</a><a href="corpus.html">Accompagnement Corpus</a></div></li>
 <li><a href="yoga.html">Yoga <i class="caret"></i></a><div class="dropdown"><a href="yoga.html">Yoga adultes</a><a href="yoga-enfants.html">Yoga enfants & ados</a></div></li>
-<li><a href="#">Formations <i class="caret"></i></a><div class="dropdown"><a href="transmissions.html">Les 3 M & transmissions</a><a href="evenements.html">Ateliers cuisine & événements</a></div></li>
+<li><a href="transmissions.html">Transmissions</a></li>
+<li><a href="evenements.html">Évènements <i class="caret"></i></a><div class="dropdown"><a href="evenements.html#createliers">Créa-ateliers cuisine</a><a href="evenements.html#trois-m">Les 3 M — Moudras, Méditation, Mantras</a><a href="cures.html">Retraites & cures</a><a href="evenements.html#partenariats">Partenariats</a></div></li>
 <li><a href="boutique.html">Boutique</a></li>
-<li><a href="a-propos.html">À propos</a></li>
-<li><a href="blog.html">Blog</a></li></ul></nav>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="a-propos.html">À propos</a></li></ul></nav>
 <a class="btn btn-primary" href="contact.html">Prendre contact</a>
 <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
 </div></header>
-<div class="pagehead"><div class="wrap"><span class="eyebrow">Un Brin d'Ayurvéda</span><h1>L'Ayurvéda</h1><p>Une science millénaire du mieux-être, déclinée en trois piliers complémentaires.</p></div></div>
+<div class="pagehead"><div class="wrap"><span class="eyebrow">Un Brin d'Ayurvéda</span><h1>L'Ayurvéda</h1><p>Une science millénaire du mieux-être — comprendre les Doshas pour mieux se connaître.</p></div></div>
 <div class="disclaimer">L'Ayurvéda est une approche holistique de Mieux-être. Elle ne constitue ni un diagnostic ni un traitement médical et s'inscrit en complément de la médecine allopathique.</div>
-<section><div class="wrap"><p class="lead">« L'Ayurvéda est une approche holistique de Mieux-être : prendre soin de la personne dans sa globalité — corps, mental et énergie. »</p>
-<div class="grid3" style="margin-top:30px">
+<section><div class="wrap prose" style="max-width:880px">
+<p class="lead" style="text-align:left">« L'Ayurvéda est une approche holistique de Mieux-être : prendre soin de la personne dans sa globalité — corps, mental et énergie. »</p>
+
+<h2>C'est quoi l'Ayurvéda ?</h2>
+<p>L'Ayurvéda est une science de la vie, née en Inde il y a plusieurs milliers d'années. Elle ne cherche pas à faire taire un symptôme : elle cherche la <b>cause</b> du déséquilibre, puis accompagne la personne — son alimentation, son rythme, son mental — vers son propre équilibre. Et cet équilibre n'est pas le même pour tout le monde : il dépend de votre nature profonde.</p>
+
+<h2>Les Doshas, nos énergies vitales</h2>
+<p>« Doshas » signifie <b>énergies vitales</b>, ou « humeurs ». L'Ayurvéda utilise les Doshas pour identifier les facteurs qui nous influencent, et qui seraient nuisibles ou bénéfiques au corps et à l'esprit.</p>
+<p>L'univers est constitué des cinq éléments : <b>Éther, Air, Feu, Eau et Terre</b>. Tout comme lui, nous sommes également constitués de ces cinq éléments.</p>
+
+<div class="elem-grid">
+ <div class="elem"><b>Éther</b><span>L'espace : il en faut pour mettre des choses dedans. Nous avons de l'espace dans le foie, le côlon, la vessie, les poumons, la cage thoracique, les articulations, les os…</span></div>
+ <div class="elem"><b>Air</b><span>Il fait avancer le bol alimentaire — c'est le messager du corps. En excès : pensées négatives, peurs, craintes, dépression, burn-out.</span></div>
+ <div class="elem"><b>Feu</b><span>Il s'associe directement à la digestion. Comme sa nature est de détruire, il est toujours mêlé à l'Eau dans notre corps, pour éviter la destruction de nos tissus.</span></div>
+ <div class="elem"><b>Eau</b><span>Elle permet au corps de grandir. Son organe sensoriel est la langue : nous goûtons le monde grâce aux saveurs. Or les capteurs du goût ne fonctionnent que si la langue est humidifiée par la salive. Sans Eau, plus de goût.</span></div>
+ <div class="elem"><b>Terre</b><span>L'odorat lui est étroitement lié. Son accumulation est stockée et transformée en graisse. Beaucoup de Terre : peau dure, ongles solides, muscles larges, cheveux épais.</span></div>
+</div>
+
+<h2>Trois Doshas — deux éléments chacun</h2>
+<p>L'Ayurvéda a regroupé ces cinq éléments deux par deux, formant les trois Doshas.</p>
+<div class="dosha-grid">
+ <div class="dosha">
+  <h3>Vāta</h3><div class="compo">Air + Éther · l'énergie du mouvement</div>
+  <p>Vāta gouverne Kapha et Pitta, car ces énergies sont incapables de mouvement sans elle. Elle est responsable des fonctions organiques, physiques et émotionnelles — comme l'anxiété, la nervosité, la peur…</p>
+  <dl><dt>Son siège</dt><dd>Le gros côlon, puis les cuisses, les hanches, les oreilles, les os.</dd>
+  <dt>En excès</dt><dd>Irritation nerveuse, hypertension, gaz, confusion, constipation, congestions…</dd></dl>
+ </div>
+ <div class="dosha">
+  <h3>Pitta</h3><div class="compo">Feu + Eau · l'énergie du métabolisme</div>
+  <p>Pitta représente les enzymes qui digèrent la nourriture ; elle est la force qui donne l'impulsion électrique de nos pensées.</p>
+  <dl><dt>Son siège</dt><dd>L'intestin grêle, puis l'estomac, les yeux, le sang, la lymphe, les glandes sébacées, la sueur.</dd>
+  <dt>En excès</dt><dd>Ulcère, déséquilibres hormonaux, irritations cutanées (acné, psoriasis…), colère.</dd>
+  <dt>Pas assez</dt><dd>Indigestion, manque de discernement, métabolisme ralenti.</dd></dl>
+ </div>
+ <div class="dosha">
+  <h3>Kapha</h3><div class="compo">Eau + Terre · l'énergie de la structure</div>
+  <p>L'Eau porte la plupart des aspects protecteurs et réparateurs du Kapha : elle est la fondation de la Terre dans le corps — elle en supporte le poids et la stabilise. L'énergie Kapha forme les cellules qui construisent nos organes et nos fluides.</p>
+  <dl><dt>Son siège</dt><dd>L'estomac, puis la poitrine, la gorge, la tête, le nez, le pancréas, les côtes, la lymphe, le tissu adipeux.</dd>
+  <dt>En excès</dt><dd>L'eau peut « inonder » l'estomac et perturber les tissus du corps. Une nourriture trop humide ou huileuse réduit le pouvoir du feu dans la digestion : le corps met plus de temps à bien assimiler. La perte de l'appétit et la sensation de ballonnement sont les signes précoces. Chez la femme, un excès d'eau peut augmenter la production de lait et les règles ; l'obésité est une maladie directement liée à un excès d'eau.</dd>
+  <dt>Pas assez</dt><dd>Déshydratation, peau et tissus secs, perte de poids, faiblesses ressenties dans les organes reproductifs, réduction des urines, constipation.</dd></dl>
+ </div>
+</div>
+
+<p style="margin-top:22px">C'est pourquoi <b>le siège du Dosha est important</b> : le Dosha s'accumule d'abord dans son siège, puis « sort » et donne naissance aux maladies. En traitant les premiers symptômes dans le côlon, l'intestin grêle ou l'estomac, nous tendons vers l'équilibre de la santé parfaite.</p>
+
+<h2>Prakriti &amp; Vikruti — la constitution et la condition</h2>
+<p>En Ayurvéda, le profil est double : nous parlons de <b>Prakriti</b> (la constitution) et de <b>Vikruti</b> (la condition).</p>
+<p>Lorsque nous naissons, nous parlons de <b>Prakriti</b>, notre nature première. Elle reste identique tout au long de notre vie et représente le point de départ de notre équilibre personnel : bien la connaître est un bel atout.</p>
+<p>Lorsque notre corps et notre esprit ne sont plus en harmonie et en équilibre, il y a naissance de la maladie, qui affecte <b>Vikruti</b>, notre condition présente. En prenant en charge notre condition actuelle à l'aide des principes de l'Ayurvéda, nous pouvons retrouver l'équilibre et vivre en harmonie.</p>
+
+<div class="pricebox"><p style="margin:0"><b>Envie de connaître votre constitution ?</b> Le bilan ayurvédique est le point de départ : nous prenons le temps d'identifier votre Prakriti et votre Vikruti, puis nous construisons ensemble ce qui vous convient.<br><a class="btn btn-primary" href="accompagnements.html" style="margin-top:14px">Découvrir les bilans &amp; consultations</a></p></div>
+</div></section>
+
+<section><div class="wrap">
+<div class="center" style="max-width:620px;margin:0 auto 34px"><span class="eyebrow">Au quotidien</span><h2 style="font-size:2.3rem;color:var(--green-d);margin-top:10px">Trois piliers complémentaires</h2></div>
+<div class="grid3">
  <a class="card" href="accompagnements.html"><div class="img"><img src="assets/pilier-nutrition.jpg" alt="Nutrition"></div><div class="body"><h3>Nutrition</h3><p>« Que ton alimentation soit ton premier remède. » Identifier la cause d'un déséquilibre plutôt que de masquer les symptômes.</p></div></a>
  <a class="card" href="massages.html"><div class="img"><img src="assets/pilier-massage.jpg" alt="Massages"></div><div class="body"><h3>Massages & soins</h3><p>Des massages traditionnels adaptés à votre constitution, pour la détente et l'équilibre.</p></div></a>
  <a class="card" href="yoga.html"><div class="img"><img src="assets/pilier-yoga.jpg" alt="Yoga"></div><div class="body"><h3>Yoga</h3><p>Un yoga fonctionnel, qui s'adapte à votre corps et à vos besoins du moment.</p></div></a>
@@ -131,8 +225,8 @@ footer a{display:block;font-size:.87rem;padding:4px 0;color:rgba(245,241,230,.66
 <div class="foot">
 <div><img src="assets/logo.png" alt="Un Brin d'Ayurvéda"><div class="slo">«&nbsp;Accompagnements complets vers soi m'aime&nbsp;»</div><p style="font-size:.86rem;margin-top:8px">Accompagnement ayurvédique à Nelling, entre Sarrebourg et Puttelange-aux-Lacs.</p></div>
 <div><h4>Prestations</h4><a href="massages.html">Massages & soins</a><a href="yoga.html">Yoga</a><a href="accompagnements.html">Consultations & Ateliers</a><a href="corpus.html">Accompagnement Corpus</a></div>
-<div><h4>Découvrir</h4><a href="a-propos.html">À propos de Monia</a><a href="transmissions.html">Formations</a><a href="boutique.html">Boutique</a><a href="temoignages.html">Témoignages</a><a href="faq.html">FAQ</a><a href="blog.html">Blog</a></div>
-<div><h4>Contact</h4><a href="tel:0630203034">06 30 20 30 34</a><a href="mailto:contact@un-brin-dayurveda.fr">contact@un-brin-dayurveda.fr</a><a href="contact.html">16 rue de la Chapelle, Nelling</a><a href="contact.html">Bons cadeaux</a></div>
+<div><h4>Découvrir</h4><a href="a-propos.html">À propos de Monia</a><a href="transmissions.html">Transmissions</a><a href="evenements.html">Évènements</a><a href="boutique.html">Boutique</a><a href="temoignages.html">Témoignages</a><a href="faq.html">FAQ</a><a href="blog.html">Blog</a></div>
+<div><h4>Contact</h4><a href="tel:0630203034">06 34 20 30 34</a><a href="mailto:contact@un-brin-dayurveda.fr">contact@un-brin-dayurveda.fr</a><a href="contact.html">16 rue de la Chapelle, Nelling</a><a href="contact.html">Bons cadeaux</a></div>
 </div>
 <div class="foot-bottom">© 2026 Un Brin d'Ayurvéda — Monia Di Cintio · Mentions légales · Confidentialité</div>
 </div></footer>
