@@ -116,11 +116,12 @@ footer a{display:block;font-size:.87rem;padding:4px 0;color:rgba(245,241,230,.66
 .dosha dt{font-weight:600;color:var(--green-d);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;margin-top:11px}
 .dosha dd{color:var(--soft);line-height:1.6}
 /* --- prochaines dates --- */
-.dates{list-style:none;margin:18px 0 0}
+.dates{list-style:none;margin:18px 0 0;padding:0}
+.dates li::before{display:none}
 .dates li{display:grid;grid-template-columns:94px 1fr auto;gap:18px;align-items:center;background:#fff;border-radius:14px;padding:15px 22px;margin-bottom:12px;box-shadow:var(--shadow)}
 .dates .d{font-family:'Cormorant Garamond',serif;color:var(--green);line-height:1.12;text-align:center}
 .dates .d b{display:block;font-size:1.95rem}
-.dates .d span{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sage)}
+.dates .d span{display:block;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--sage);line-height:1.5}
 .dates h4{font-family:'Inter';font-weight:600;font-size:1rem;color:var(--green-d);margin-bottom:2px}
 .dates .meta{font-size:.83rem;color:var(--soft)}
 .dates .k{display:inline-block;font-size:.66rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:var(--mint);color:var(--green-d);padding:3px 12px;border-radius:50px;white-space:nowrap}
