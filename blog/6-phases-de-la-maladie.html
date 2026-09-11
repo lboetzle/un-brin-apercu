@@ -188,7 +188,13 @@ html{scroll-behavior:smooth}
 .blog-cat{margin-top:38px}
 .blog-cat h2{font-size:1.7rem;color:var(--green-d);border-bottom:2px solid var(--mint);padding-bottom:8px;margin-bottom:20px}
 .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.bcard{background:#fff;border-radius:14px;padding:22px 22px 24px;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column}
+.bcard{background:#fff;border-radius:14px;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column;overflow:hidden}
+.bbody{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.bthumb{aspect-ratio:16/10;overflow:hidden;background:var(--mint-s)}
+.bthumb img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s}
+.bcard:hover .bthumb img{transform:scale(1.04)}
+.article-cover{width:100%;border-radius:16px;margin:22px 0 6px;box-shadow:var(--shadow)}
+.article-img{width:100%;border-radius:16px;margin:26px 0 0;box-shadow:var(--shadow)}
 .bcard:hover{transform:translateY(-5px)}
 .bcard .k{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:6px}
 .bcard h3{font-size:1.3rem;color:var(--green-d);margin-bottom:8px;line-height:1.2}
@@ -215,6 +221,7 @@ html{scroll-behavior:smooth}
 <a class="backlink" href="../blog.html">← Retour au blog</a>
 <div class="article-meta">Corps &amp; Bien-être</div>
 <h1>Les 6 phases de la maladie selon l&#x27;Ayurveda</h1>
+<img class="article-cover" src="../assets/blog/6-phases-de-la-maladie-1.jpg" alt="" width="1100" height="733" fetchpriority="high">
 <p>Quand les énergies (Doshas), les tissus (Dhatus), les fonctions d&#x27;élimination (Srotas), le feu digestif (Agni), l&#x27;esprit et les sens sont équilibrés et fonctionnent en harmonie, alors nous sommes en parfaite santé. L&#x27;Ayurveda vise à maintenir les individus en bonne santé et à ramener ceux qui ne le sont pas vers un mieux-être. Chaque Dosha a un siège : Vata (côlon), Pitta (intestin grêle), Kapha (estomac).</p>
 <p>Phase 1 — Accumulation (Sanchaya) : hygiène de vie et alimentation déséquilibrées, émotions réprimées → accumulation de toxines. Symptômes légers souvent ignorés : difficulté à s&#x27;endormir, anxiété, nez bouché, peau sèche, fatigue, lourdeur. Recommandations : ne pas surcharger la digestion, tisanes détoxifiantes, monodiète, marche, yoga, méditation, respiration, routine de sommeil, consulter un praticien.</p>
 <p>Phase 2 — Aggravation (Prakopa) : aucune action n&#x27;est entreprise, les toxines (Ama) deviennent plus actives, les Doshas sortent de leur siège. Signes : froideur des mains et pieds, sécheresse, spasmes abdominaux, vertiges, indigestion.</p>
@@ -223,6 +230,7 @@ html{scroll-behavior:smooth}
 <p>Phase 5 — Manifestation (Vyakthi) : les signes deviennent évidents, la maladie s&#x27;installe — c&#x27;est le stade où la médecine moderne pose son diagnostic (arthrose, côlon irritable, dépression). Inverser la tendance reste possible avec un suivi mensuel.</p>
 <p>Phase 6 — Complication (Bhedaavastha) : plusieurs maladies apparaissent ; traitements puissants, soins intensifs ou chirurgie.</p>
 <p>Conclusion : l&#x27;Ayurveda demeure une médecine de prévention, agissant dès le départ avec des clefs de santé — massage, nutrition, accompagnement émotionnel et physique par le yoga.</p>
+
 <p style="margin-top:30px"><a class="btn btn-primary" href="../contact.html">Demander un rendez-vous avec Monia</a></p>
 </div>
 <footer><div class="wrap">

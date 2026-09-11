@@ -188,7 +188,13 @@ html{scroll-behavior:smooth}
 .blog-cat{margin-top:38px}
 .blog-cat h2{font-size:1.7rem;color:var(--green-d);border-bottom:2px solid var(--mint);padding-bottom:8px;margin-bottom:20px}
 .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.bcard{background:#fff;border-radius:14px;padding:22px 22px 24px;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column}
+.bcard{background:#fff;border-radius:14px;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column;overflow:hidden}
+.bbody{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.bthumb{aspect-ratio:16/10;overflow:hidden;background:var(--mint-s)}
+.bthumb img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s}
+.bcard:hover .bthumb img{transform:scale(1.04)}
+.article-cover{width:100%;border-radius:16px;margin:22px 0 6px;box-shadow:var(--shadow)}
+.article-img{width:100%;border-radius:16px;margin:26px 0 0;box-shadow:var(--shadow)}
 .bcard:hover{transform:translateY(-5px)}
 .bcard .k{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:6px}
 .bcard h3{font-size:1.3rem;color:var(--green-d);margin-bottom:8px;line-height:1.2}
@@ -215,9 +221,11 @@ html{scroll-behavior:smooth}
 <a class="backlink" href="../blog.html">← Retour au blog</a>
 <div class="article-meta">Corps &amp; Bien-être</div>
 <h1>Le Triphala en Ayurveda</h1>
+<img class="article-cover" src="../assets/blog/le-triphala-1.jpg" alt="" width="1100" height="733" fetchpriority="high">
 <p>Le Triphala est un mélange de 3 poudres provenant de 3 baies indiennes : Amla, Haritaki et Bibhitaki. La formule convient aux 3 Humeurs (Doshas) : Bibhitaki équilibre Kapha, Amla (Amalaki) équilibre Pitta, Haritaki équilibre Vata. Elle est donc TRIDOSHIQUE.</p>
 <p>En cas de grossesse, la prise du Triphala est à éviter (l&#x27;Amalaki seule peut éventuellement être envisagée). On lui confère de nombreux bienfaits : il régénère le côlon, aide en cas de constipation, renforce l&#x27;immunité, lutte contre le cholestérol, soutient le foie, élimine les toxines et purifie le sang. En beauté : l&#x27;Haritaki purifie la peau, le Bibhitaki tonifie et régénère, l&#x27;Amalaki agit comme antioxydant et anti-âge.</p>
 <p>Lors de mon apprentissage à l&#x27;école YAH Curcuma en Belgique, j&#x27;ai appris qu&#x27;avant d&#x27;aller dormir, il est recommandé de consommer 3 à 5 g de Triphala dans une boisson tiède ou chaude (laissez infuser 10 min), éventuellement avec un peu de miel ou de ghee. Pour ma part, je prends une bonne cuillère à café dans une tasse d&#x27;eau chaude le soir — même si le goût est toujours aussi particulier ! En prévention, on peut l&#x27;utiliser pendant 6 à 8 semaines ; je l&#x27;emploie particulièrement avant mes préparations de cure ayurvédique.</p>
+
 <p style="margin-top:30px"><a class="btn btn-primary" href="../contact.html">Demander un rendez-vous avec Monia</a></p>
 </div>
 <footer><div class="wrap">

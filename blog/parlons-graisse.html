@@ -188,7 +188,13 @@ html{scroll-behavior:smooth}
 .blog-cat{margin-top:38px}
 .blog-cat h2{font-size:1.7rem;color:var(--green-d);border-bottom:2px solid var(--mint);padding-bottom:8px;margin-bottom:20px}
 .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.bcard{background:#fff;border-radius:14px;padding:22px 22px 24px;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column}
+.bcard{background:#fff;border-radius:14px;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column;overflow:hidden}
+.bbody{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.bthumb{aspect-ratio:16/10;overflow:hidden;background:var(--mint-s)}
+.bthumb img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s}
+.bcard:hover .bthumb img{transform:scale(1.04)}
+.article-cover{width:100%;border-radius:16px;margin:22px 0 6px;box-shadow:var(--shadow)}
+.article-img{width:100%;border-radius:16px;margin:26px 0 0;box-shadow:var(--shadow)}
 .bcard:hover{transform:translateY(-5px)}
 .bcard .k{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:6px}
 .bcard h3{font-size:1.3rem;color:var(--green-d);margin-bottom:8px;line-height:1.2}
@@ -215,10 +221,12 @@ html{scroll-behavior:smooth}
 <a class="backlink" href="../blog.html">← Retour au blog</a>
 <div class="article-meta">Corps &amp; Bien-être</div>
 <h1>Et si nous parlions « Graisse » ?</h1>
+<img class="article-cover" src="../assets/blog/parlons-graisse-1.jpg" alt="" width="1100" height="733" fetchpriority="high">
 <p>Lorsque j&#x27;organise des ateliers cuisine, les personnes sont souvent surprises par les matières grasses utilisées : « N&#x27;en mets pas trop, Monia ! » Si l&#x27;Ayurveda m&#x27;a enseigné une chose, c&#x27;est que le BON gras est bon pour notre santé et nos conduits !</p>
 <p>Les graisses saturées, mono-insaturées et polyinsaturées sont naturelles, alors que les gras « transformés » sont créés par l&#x27;homme : acidifiants, cancérigènes et pro-inflammatoires, ils diminuent l&#x27;assimilation des bonnes graisses. Le ghee (beurre clarifié), mon préféré, est un bon nettoyant qui aide à purifier le foie. En cuisine, je diversifie mes huiles et j&#x27;en profite !</p>
 <p>« Le cholestérol, je le chasse », entends-je trop souvent. Mais que savons-nous vraiment de lui ? Il est fabriqué par l&#x27;organisme à près de 70 %, le reste venant de l&#x27;alimentation. Il permet de synthétiser certaines hormones et notre vitamine D. Le LDL n&#x27;est un problème que lorsqu&#x27;il s&#x27;oxyde (stress, malbouffe…), provoquant les plaques. Tant qu&#x27;il n&#x27;y a pas d&#x27;oxydation, le cholestérol agit même comme un baume contre l&#x27;inflammation.</p>
 <p>L&#x27;Ayurveda nous enseigne que se soigner en profondeur demande du temps, mais permet de tendre vers une santé parfaite. Alors, prêt à mettre du bon gras dans ta vie ?</p>
+
 <p style="margin-top:30px"><a class="btn btn-primary" href="../contact.html">Demander un rendez-vous avec Monia</a></p>
 </div>
 <footer><div class="wrap">

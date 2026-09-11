@@ -188,7 +188,13 @@ html{scroll-behavior:smooth}
 .blog-cat{margin-top:38px}
 .blog-cat h2{font-size:1.7rem;color:var(--green-d);border-bottom:2px solid var(--mint);padding-bottom:8px;margin-bottom:20px}
 .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.bcard{background:#fff;border-radius:14px;padding:22px 22px 24px;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column}
+.bcard{background:#fff;border-radius:14px;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column;overflow:hidden}
+.bbody{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.bthumb{aspect-ratio:16/10;overflow:hidden;background:var(--mint-s)}
+.bthumb img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s}
+.bcard:hover .bthumb img{transform:scale(1.04)}
+.article-cover{width:100%;border-radius:16px;margin:22px 0 6px;box-shadow:var(--shadow)}
+.article-img{width:100%;border-radius:16px;margin:26px 0 0;box-shadow:var(--shadow)}
 .bcard:hover{transform:translateY(-5px)}
 .bcard .k{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:6px}
 .bcard h3{font-size:1.3rem;color:var(--green-d);margin-bottom:8px;line-height:1.2}
@@ -215,12 +221,14 @@ html{scroll-behavior:smooth}
 <a class="backlink" href="../blog.html">← Retour au blog</a>
 <div class="article-meta">Plantes &amp; Permaculture</div>
 <h1>La Sauge Ananas</h1>
+<img class="article-cover" src="../assets/blog/la-sauge-ananas-1.jpg" alt="" width="1100" height="733" fetchpriority="high">
 <p>10/07/2021 — Envie de voyage au jardin ?!</p>
 <p>Coucou les amoureux de la nature 💚</p>
 <p>De retour d&#x27;une fabuleuse journée à la rencontre de formidables personnes amoureuses des plantes, me voici dans mon jardin pour vous parler de la Sauge ananas, ou Salvia elegans.</p>
 <p>Originaire du Mexique, j&#x27;adore cette plante qui peut atteindre 1,20 m de haut (d&#x27;où le fait que je l&#x27;ai mise dans le coin) ; elle donne des fleurs magnifiques en automne. Les feuilles se récoltent toute l&#x27;année ! Attention : elle n&#x27;aime pas le gel, grande précaution pour sa culture.</p>
 <p>Reconnue pour ses vertus apaisantes, digestives, stimulantes hormonales (bouffées de chaleur et vertiges de la ménopause, règles), il faut toutefois prendre des précautions lors d&#x27;une consommation régulière (déconseillée aux personnes souffrant d&#x27;épilepsie, aux femmes enceintes et allaitantes, ainsi qu&#x27;aux femmes souffrant d&#x27;un cancer du sein). Toute plante est à utiliser avec attention : on ne saurait être trop prudent !</p>
 <p>Je l&#x27;utilise en tisane et surtout dans les desserts — la gourmandise saine est possible, surtout si tu manges le dessert en début de repas. Testez-la, le goût ananas vous surprendra.</p>
+
 <p style="margin-top:30px"><a class="btn btn-primary" href="../contact.html">Demander un rendez-vous avec Monia</a></p>
 </div>
 <footer><div class="wrap">

@@ -188,7 +188,13 @@ html{scroll-behavior:smooth}
 .blog-cat{margin-top:38px}
 .blog-cat h2{font-size:1.7rem;color:var(--green-d);border-bottom:2px solid var(--mint);padding-bottom:8px;margin-bottom:20px}
 .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.bcard{background:#fff;border-radius:14px;padding:22px 22px 24px;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column}
+.bcard{background:#fff;border-radius:14px;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column;overflow:hidden}
+.bbody{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.bthumb{aspect-ratio:16/10;overflow:hidden;background:var(--mint-s)}
+.bthumb img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s}
+.bcard:hover .bthumb img{transform:scale(1.04)}
+.article-cover{width:100%;border-radius:16px;margin:22px 0 6px;box-shadow:var(--shadow)}
+.article-img{width:100%;border-radius:16px;margin:26px 0 0;box-shadow:var(--shadow)}
 .bcard:hover{transform:translateY(-5px)}
 .bcard .k{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:6px}
 .bcard h3{font-size:1.3rem;color:var(--green-d);margin-bottom:8px;line-height:1.2}
@@ -215,10 +221,12 @@ html{scroll-behavior:smooth}
 <a class="backlink" href="../blog.html">← Retour au blog</a>
 <div class="article-meta">Recettes</div>
 <h1>Pesto aux fanes de carottes façon ayurvédique</h1>
+<img class="article-cover" src="../assets/blog/pesto-fanes-de-carottes-1.jpg" alt="" width="1100" height="733" fetchpriority="high">
 <p>Saviez-vous que les fanes de carottes contiennent des vitamines C, B9, du fer et de la vitamine A ?! Autant dire que pour lutter contre la fatigue physique et mentale et garder une belle peau, ne jetons plus ces merveilleuses feuilles vertes !</p>
 <p>Lors de mon apprentissage à l&#x27;École Internationale YAH en Belgique, j&#x27;ai appris à préparer des pestos selon le principe des 6 goûts, essentiels à notre bel équilibre !</p>
 <p>Recette (à la main ou au mixeur) : hachez grossièrement les fanes (vous pouvez utiliser tout ce qui est vert et en feuille !). Incorporez le sel noir (ou autre), le poivre noir, 1 morceau de gingembre râpé (environ 2 cm), 1 bonne cuillère à soupe d&#x27;oléagineux (ici des noix de cajou) préalablement trempés, ½ citron, de l&#x27;huile (ici une bonne huile d&#x27;olive des Oliviers d&#x27;Italie, cadeau de mon partenaire l&#x27;Hôtel Bel Esprit ♥). Mélangez, et c&#x27;est prêt !</p>
 <p>En accompagnement de votre repas ou en apéritif, c&#x27;est un délice ! À consommer avec amour. Pour d&#x27;autres recettes et la cuisine selon les principes de l&#x27;Ayurveda, contactez-moi : j&#x27;organise des ateliers pratiques à l&#x27;Hôtel Bel Esprit et même à votre domicile ! — Monia</p>
+
 <p style="margin-top:30px"><a class="btn btn-primary" href="../contact.html">Demander un rendez-vous avec Monia</a></p>
 </div>
 <footer><div class="wrap">

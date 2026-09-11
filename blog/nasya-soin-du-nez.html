@@ -188,7 +188,13 @@ html{scroll-behavior:smooth}
 .blog-cat{margin-top:38px}
 .blog-cat h2{font-size:1.7rem;color:var(--green-d);border-bottom:2px solid var(--mint);padding-bottom:8px;margin-bottom:20px}
 .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.bcard{background:#fff;border-radius:14px;padding:22px 22px 24px;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column}
+.bcard{background:#fff;border-radius:14px;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column;overflow:hidden}
+.bbody{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.bthumb{aspect-ratio:16/10;overflow:hidden;background:var(--mint-s)}
+.bthumb img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s}
+.bcard:hover .bthumb img{transform:scale(1.04)}
+.article-cover{width:100%;border-radius:16px;margin:22px 0 6px;box-shadow:var(--shadow)}
+.article-img{width:100%;border-radius:16px;margin:26px 0 0;box-shadow:var(--shadow)}
 .bcard:hover{transform:translateY(-5px)}
 .bcard .k{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:6px}
 .bcard h3{font-size:1.3rem;color:var(--green-d);margin-bottom:8px;line-height:1.2}
@@ -215,9 +221,11 @@ html{scroll-behavior:smooth}
 <a class="backlink" href="../blog.html">← Retour au blog</a>
 <div class="article-meta">Massages &amp; soins</div>
 <h1>Nasya — le soin du nez ayurvédique</h1>
+<img class="article-cover" src="../assets/blog/nasya-soin-du-nez-1.jpg" alt="" width="1100" height="733" fetchpriority="high">
 <p>En sanskrit, on dit que « le nez est la porte d&#x27;entrée de la tête ». Prendre soin de cette zone, c&#x27;est aussi prendre soin de son mental et de son équilibre intérieur. Lors de ma formation d&#x27;experte thérapeute corporelle (YAH, Belgique, 2020), puis de mon perfectionnement avec Uvas Ayurveda (2022), j&#x27;ai appris ce soin ancestral : le Nasya, un rituel puissant qui agit en profondeur sur la sphère ORL, le mental et l&#x27;équilibre global.</p>
 <p>Pratiqué sur plusieurs jours ou régulièrement, il aide à : dégager et purifier les sinus, soulager les allergies saisonnières, réduire la sécheresse nasale, améliorer la clarté mentale et la concentration, apaiser le stress, soulager maux de tête et migraines, améliorer l&#x27;odorat, favoriser un sommeil réparateur. Il peut aussi aider en cas de ronflements liés à une congestion nasale ou à un excès de Kapha.</p>
 <p>Je l&#x27;ai moi-même reçu cette année en Inde, chez Chamundi Hill Palace dans le Kerala : sujette aux allergies saisonnières, ce soin m&#x27;a permis de libérer les sinus et d&#x27;apaiser mon système nerveux. En attendant un rendez-vous, découvrez le Mini Nasya : après avoir utilisé le neti pot avec de l&#x27;eau salée, quelques gouttes d&#x27;huile dans chaque narine libèrent les sinus et apaisent le mental — une façon douce et accessible d&#x27;en profiter à la maison !</p>
+
 <p style="margin-top:30px"><a class="btn btn-primary" href="../contact.html">Demander un rendez-vous avec Monia</a></p>
 </div>
 <footer><div class="wrap">

@@ -188,7 +188,13 @@ html{scroll-behavior:smooth}
 .blog-cat{margin-top:38px}
 .blog-cat h2{font-size:1.7rem;color:var(--green-d);border-bottom:2px solid var(--mint);padding-bottom:8px;margin-bottom:20px}
 .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.bcard{background:#fff;border-radius:14px;padding:22px 22px 24px;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column}
+.bcard{background:#fff;border-radius:14px;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column;overflow:hidden}
+.bbody{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.bthumb{aspect-ratio:16/10;overflow:hidden;background:var(--mint-s)}
+.bthumb img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s}
+.bcard:hover .bthumb img{transform:scale(1.04)}
+.article-cover{width:100%;border-radius:16px;margin:22px 0 6px;box-shadow:var(--shadow)}
+.article-img{width:100%;border-radius:16px;margin:26px 0 0;box-shadow:var(--shadow)}
 .bcard:hover{transform:translateY(-5px)}
 .bcard .k{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:6px}
 .bcard h3{font-size:1.3rem;color:var(--green-d);margin-bottom:8px;line-height:1.2}
@@ -215,10 +221,12 @@ html{scroll-behavior:smooth}
 <a class="backlink" href="../blog.html">← Retour au blog</a>
 <div class="article-meta">Corps &amp; Bien-être</div>
 <h1>Remède au naturel</h1>
+<img class="article-cover" src="../assets/blog/remede-au-naturel-1.jpg" alt="" width="1100" height="733" fetchpriority="high">
 <p>Avec deux ingrédients, je booste mon système immunitaire et je me soigne !</p>
 <p>Après un week-end de soleil et de jardin, le mauvais temps revient, et le mal de gorge aussi… Quand je commence à avoir mal à la gorge, j&#x27;utilise ce remède que mon bienveillant professeur d&#x27;Ayurveda, John Marchand, nous a transmis — avec seulement 2 ingrédients ! Parfait aussi quand vos enfants ont la gorge qui grattouille.</p>
 <p>Miel et gingembre, les deux produits phares ♥️ : avec une cuillère, enlevez la peau du gingembre (réutilisable en tisane), râpez, pressez et incorporez au miel (local de préférence), puis mélangez. 3 cuillères à café par jour minimum, et buvez une bonne tisane qui réchauffe.</p>
 <p>Un petit remède naturel mais grand par son action. Bien sûr, si cela ne passe pas après 3 jours, consultez votre médecin. Prenez soin de vous 🙏</p>
+
 <p style="margin-top:30px"><a class="btn btn-primary" href="../contact.html">Demander un rendez-vous avec Monia</a></p>
 </div>
 <footer><div class="wrap">

@@ -188,7 +188,13 @@ html{scroll-behavior:smooth}
 .blog-cat{margin-top:38px}
 .blog-cat h2{font-size:1.7rem;color:var(--green-d);border-bottom:2px solid var(--mint);padding-bottom:8px;margin-bottom:20px}
 .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.bcard{background:#fff;border-radius:14px;padding:22px 22px 24px;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column}
+.bcard{background:#fff;border-radius:14px;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column;overflow:hidden}
+.bbody{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.bthumb{aspect-ratio:16/10;overflow:hidden;background:var(--mint-s)}
+.bthumb img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s}
+.bcard:hover .bthumb img{transform:scale(1.04)}
+.article-cover{width:100%;border-radius:16px;margin:22px 0 6px;box-shadow:var(--shadow)}
+.article-img{width:100%;border-radius:16px;margin:26px 0 0;box-shadow:var(--shadow)}
 .bcard:hover{transform:translateY(-5px)}
 .bcard .k{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:6px}
 .bcard h3{font-size:1.3rem;color:var(--green-d);margin-bottom:8px;line-height:1.2}
@@ -215,12 +221,14 @@ html{scroll-behavior:smooth}
 <a class="backlink" href="../blog.html">← Retour au blog</a>
 <div class="article-meta">Corps &amp; Bien-être</div>
 <h1>Je booste mon immunité</h1>
+<img class="article-cover" src="../assets/blog/booster-immunite-1.jpg" alt="" width="1100" height="733" fetchpriority="high">
 <p>Les soldats bienfaisants de notre organisme…</p>
 <p>En observant les personnes qui m&#x27;entourent, je me suis rendu compte que nous avons peu de connaissance de notre système immunitaire. J&#x27;aimerais vous en parler, et voir comment l&#x27;Ayurveda l&#x27;aborde. Petite, j&#x27;adorais regarder « Il était une fois la vie » et ces images qui expliquaient notre corps.</p>
 <p>Lorsque notre corps est confronté à des agressions extérieures, il active son système immunitaire — comme une armée de soldats qui se met en place pour nous défendre. Les organes lymphoïdes (moelle osseuse, ganglions, rate, amygdales, thymus) produisent les cellules de l&#x27;immunité et leur apprennent à reconnaître ce qui fait partie de notre corps ou non.</p>
 <p>Prendre soin de notre système immunitaire est essentiel : c&#x27;est le gardien de notre temple. Toutes les médecines ont un point commun : le stress, la malbouffe et le manque d&#x27;exercice ne l&#x27;encouragent pas. En Ayurveda, le point clé est l&#x27;entretien d&#x27;Agni, notre feu digestif — une bougie interne qui digère tout : la nourriture, les émotions, la pollution, les bruits… Trop de feu brûle tout sur son passage ; trop peu empêche la bonne combustion des toxines.</p>
 <p>Pour en prendre soin, par étapes : ♥ privilégier les produits frais, locaux, les plantes et épices ; ♥ compléter au besoin (fer, zinc, sélénium, vitamines A, D, E, K, C, magnésium…) avec l&#x27;avis de votre praticien ou médecin ; ♥ pratiquer une activité physique (yoga, marche, course, vélo) ; ♥ prendre soin de son corps par les massages ; ♥ apaiser le mental (méditation, respiration) ; ♥ bien dormir, car le sommeil régénère le système ; ♥ trouver des moments pour soi ; ♥ apprendre à dire non ; ♥ rire — c&#x27;est bon pour la santé !</p>
 <p>« Prenez soin de votre corps et vous donnerez envie à votre âme d&#x27;y rester. » — proverbe indien. — Monia Di Cintio, thérapeute en médecine ayurvédique.</p>
+
 <p style="margin-top:30px"><a class="btn btn-primary" href="../contact.html">Demander un rendez-vous avec Monia</a></p>
 </div>
 <footer><div class="wrap">
